@@ -56,6 +56,6 @@ Außerdem bietet das Theme viele vorgefertigte Komponenten, die auf der Beispiel
 
 Im `_doc/`-Verzeichnis haben wir u.a. eine `index.md`-Datei aus der die Startseite generiert wird und alle weiteren`.md`-Dateien per `navigation` mapping einbindet und somit die Navigation generiert. Dies hat nicht funktioniert als die Konfiguration noch alles was im Hauptverzeichnis war eingebunden hat.
 
-In den anderen `.md`-Dateien können wir `title`, `excerpt`, `date`, `icon` und `color` definieren, die sowohl auf die Seite selbst als auch auf das Navigationselement auf der Startseite haben.
+In den anderen `.md`-Dateien können wir `title`, `excerpt`, `date`, `icon` und `color` definieren, die sowohl Auswirkung auf die Seite selbst als auch auf das Navigationselement auf der Startseite haben.
 
 Außerdem werden in den anderen `.md`-Dateien mit `sections` Subsections definiert, die in gleichnamigen Verzeichnissen ausgelagert sind.
