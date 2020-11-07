@@ -47,3 +47,5 @@ Mit dieser Dokumentation möchten wir unsere Ergebnisse und Entwicklungserfahrun
 [ANLEITUNG]: /anleitung-und-funktionsuebersicht.html
 [PROJEKT]: /projekt.html
 [GITHUB]: https://github.com/th-koeln-intia/ip-sprachassistent-team5
+
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/index.css">

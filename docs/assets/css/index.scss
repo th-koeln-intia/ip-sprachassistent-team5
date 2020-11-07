@@ -1,0 +1,29 @@
+---
+---
+
+.cta-container p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.cta-container .btn {
+    width: 100%;
+}
+
+.btn + .btn {
+    margin-top: 0.5em;
+}
+
+@media(min-width: 800px) {
+    .cta-container .btn {
+      width: auto;
+    }
+
+    .btn + .btn {
+      margin: 0;
+      margin-left: 1em;
+    }
+}
