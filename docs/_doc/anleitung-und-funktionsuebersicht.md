@@ -77,7 +77,7 @@ Den Startvorgang kann man beobachten mit: ::tail -f /var/log/syslog::
 
 Nach langer Zeit sollte über die Boxen ein "Ding" zu hören sein. Das bedeutet Alice ist bereit.
 
-Man kann über einen PC im selben Netzwerk eine UI im Browser aufrufen. Diese findet man unter ´<ip>:5000´ .
+Man kann über einen PC im selben Netzwerk eine UI im Browser aufrufen. Diese findet man unter `<ip>:5000` .
 
 
 
