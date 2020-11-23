@@ -48,4 +48,4 @@ Mit dieser Dokumentation möchten wir unsere Ergebnisse und Entwicklungserfahrun
 [PROJEKT]: /projekt.html
 [GITHUB]: https://github.com/th-koeln-intia/ip-sprachassistent-team5
 
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/index.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/index.css">
