@@ -1,7 +1,7 @@
 ---
-title: Anleitung und Funktionsübersicht
-excerpt: Installation, Benutzeranleitung und Funktionsübersicht
-date: 2020-11-05
+title: Installations- und Bedienungsanleitung
+excerpt: Installation, Benutzeranleitung
+date: 2020-11-23
 icon:
   type: fa
   name: fa-paper-plane
