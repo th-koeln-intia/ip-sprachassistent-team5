@@ -12,7 +12,7 @@ sections:
   - /teaser-alice-skills
 ---
 
-## Sprachassistenten
+# Sprachassistenten
 
 Seitdem intelligente persönliche Sprachassistenten wie Siri (2012) oder Smart Speaker wie Amazon Echo (2014) für die breite Masse erschienen sind, hat sich viel in dem Bereich getan. Viele der großen Unternehmen wie Apple, Microsoft, Google und Amazon investieren nicht nur viel in dem Bereich sondern entwickeln auch alle ihre eigene Sprachassistenten.
 
@@ -20,7 +20,7 @@ Was jedoch alle kommerziellen Sprachassistenten gemein haben ist, dass sie nicht
 
 Seit einigen Jahren gibt es jedoch ernstzunehmende Open-Source Lösungen, die den Fokus auf den Punkt Privatsphäre legen. Diese sogennanten Maker-Lösungen werden i.d.R. auf eigener Hardware wie z.B. einem Raspberry Pi installiert und bieten neben Privatsphäre und Datenschutzkonformität außerdem oft noch eine höhere Konfigurierbarkeit und Offlinetauglichkeit.
 
-### Private-by-design
+## Private-by-design
 
 Snips, ein französisches Unternehmen, welches seit seiner Gründung im Jahr 2013, in den Bereichen Künstliche Intelligenz und Mensch-Computer Interaktion geforscht hat, veröffentlichte 2017 erstmals eine [Spracherkennungsplattform](https://medium.com/snips-ai/hey-snips-announcing-the-first-private-by-design-voice-platform-bf23b8a843fd) bei der Privatsphäre schon beim Entwurf eine Hauptrolle gespielt hat (private-by-design). Die Privatsphäre wird hierbei dadurch gewährleistet, dass alle Berechnung offline durchgeführt werden und somit keine datenschutzkritischen Anfragen nach außen notwendig sind.
 
@@ -30,7 +30,7 @@ Snips wurde 2019 von Sonos gekauft wodurch der Support für die öffentliche Pla
 
 Auch wenn der Support für Snips eingestellt ist, sind einige Softwarekomponenten von Snips übrig geblieben, die z.B. immer noch in Rhasspy und Alice Verwendung finden.
 
-### Funktionsweise und Stack eines Sprachassistenten
+## Funktionsweise und Stack eines Sprachassistenten
 
 Ein Sprachassistent besteht aus mehreren Softwarekomponenten, die einen gemeinsamen Stack bilden und lässt sich wie folgt unterteilen:
 
@@ -119,7 +119,7 @@ Folgende Text-to-Speech-Engines stehen zur Auswahl:
 
 Der Dialog Manager verwaltet eine Sitzung, die durch ein erkanntes Wakeword oder einem manuellen `startSession` initiiert wird und koordiniert ASR, NLU und TTS.
 
-### Schnittstellen
+## Schnittstellen
 
 Die einzigen Schnittstellen, die der Nutzer für die Interaktion mit dem Sprachassistenten benötigt sind Mikrofon und Lautsprecher. Für eine verbesserte Spracherkennung ist ein Mikrofon-Array zu empfehlen. Außerdem hat der Nutzer oft noch die Möglichkeit per Weboberfläche den Sprachassistenten zu konfigurieren.
 
