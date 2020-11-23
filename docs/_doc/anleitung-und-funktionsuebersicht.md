@@ -12,7 +12,7 @@ sections:
   - /funktionen
 ---
 
-#Installationsanleitungen
+# Installationsanleitungen
 
 **Verwendete Software**
 - Raspberry Pi OS Lite (Latest Version)
@@ -28,7 +28,7 @@ sections:
 
 **Hardware anschließen evlt mit Bildern**
 
-##Raspberry Pi
+## Raspberry Pi
 
 **Schritt 1:**
 [Raspberry Pi OS Lite] (https://www.raspberrypi.org/documentation/installation/installing-images/) downloaden und [BalenaEtcher] (https://www.balena.io/etcher/) installieren.
@@ -60,7 +60,7 @@ Hierzu wird [Putty] (https://www.putty.org/) verwendet. Nach der Installation ö
 Die IP Adresse findet man heraus, wenn man in die Einstellungen des Routers geht. Bei einer FritzBox zum Beispiel geht das über den Browser mit "fritz.box" in der Navigationsleiste.
 In den meisten Routern kann man auch eine statische IP-Adresse für den Raspberry Pi vergeben, dann muss man nicht immer die IP-Adresse neu herausfinden. Mit "Open" öffnet man die SSH-Verbindung und landet im Terminal des Pi.
 
-##Alice installieren und konfigurieren
+## Alice installieren und konfigurieren
 
 Git installieren mit: ::sudo apt-get install git -y::
 Alice klonen mit: ::git clone https://github.com/project-alice-assistant/ProjectAlice.git::
