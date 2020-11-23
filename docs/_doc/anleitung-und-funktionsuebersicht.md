@@ -62,18 +62,18 @@ In den meisten Routern kann man auch eine statische IP-Adresse für den Raspberr
 
 ## Alice installieren und konfigurieren
 
-Git installieren mit: ::sudo apt-get install git -y::
-Alice klonen mit: ::git clone https://github.com/project-alice-assistant/ProjectAlice.git::
+Git installieren mit: `sudo apt-get install git -y`
+Alice klonen mit: `git clone https://github.com/project-alice-assistant/ProjectAlice.git`
 
-Die Konfigurationsdatei für die Ersteinrichtung kopieren mit: ::sudo cp ~/ProjectAlice/ProjectAlice.yaml /boot/ProjectAlice.yaml::
-Und kofigurieren: ::sudo nano /boot/ProjectAlice.yaml::
+Die Konfigurationsdatei für die Ersteinrichtung kopieren mit: `sudo cp ~/ProjectAlice/ProjectAlice.yaml /boot/ProjectAlice.yaml`
+Und kofigurieren: `sudo nano /boot/ProjectAlice.yaml`
 
 Es öffnet sich eine große Datei mit allen möglichen Einstellungen. Wichtig ist das richtige Input Device einzustellen und die Spracherkennung mit der Länderkennung einzustellen, allerdings kann man alle Einstellungen später in einer übersichtilichen Browser UI noch ändern.
 Nachdem man fertig ist mit den Einstellungen bleibt nur noch Alice zu starten: 
-::cd ~/ProjectAlice::
-::python3 main.py::
+`cd ~/ProjectAlice`
+`python3 main.py`
 
-Den Startvorgang kann man beobachten mit: ::tail -f /var/log/syslog::
+Den Startvorgang kann man beobachten mit: `tail -f /var/log/syslog`
 
 Nach langer Zeit sollte über die Boxen ein "Ding" zu hören sein. Das bedeutet Alice ist bereit.
 
