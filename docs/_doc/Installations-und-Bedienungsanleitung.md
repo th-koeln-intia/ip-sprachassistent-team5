@@ -22,7 +22,7 @@ sections:
 **Verwendete Hardware**
 - Raspberry Pi 4b 4GB RAM
 - Conbee Stick 2
-- RISP 4 MicArray
+- ReSpeaker 4-Mic Array
 - Innr RS 230 C-2 Lampen
 - 32 GB SD Karte
 - Computer Boxen mit USB-Stromversorgung
