@@ -1,6 +1,6 @@
 ---
 title: Installations- und Bedienungsanleitung
-excerpt: Installation, Benutzeranleitung
+excerpt: Vom leeren Raspberry Pi zum Sprachassistenten Alice
 date: 2020-11-23
 icon:
   type: fa
