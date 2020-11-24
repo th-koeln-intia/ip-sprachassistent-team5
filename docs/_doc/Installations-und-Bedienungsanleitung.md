@@ -39,7 +39,7 @@ Die SD Karte muss jetzt so präpariert werden, dass das Betriebsystem sich von d
 Dazu steckt man die SD Karte in den PC und öffnet das Programm BalenaEtcher. Dann wählt man das zuvor heruntergeladene Betriebsytem und die SD Karte aus und klickt auf Flash.
 Sobald der Vorgang abgeschlossen ist, enfernt man die SD Karte vom PC und steckt sie erneut ein. Damit man später eine SSH Verbindung herstellen kann erstellt man als nächstes eine neue Datei mit dem Namen "ssh" ohne Dateiendung im root Verzeichnis des Sticks, das jetzt boot heißen sollte.
 Wenn man den Raspberry Pi per Wlan mit dem Netzwerk verbinden will, muss man zusätzlich noch eine Datei erstellen mit dem Namen "wpa_supplicant.conf" wieder ohne Dateiendung mit folgendem Text:
-
+```bash
 country=DE
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -50,7 +50,7 @@ network={
     psk=""
     key_mgmt=WPA-PSK
 } 
-
+```
 Man sollte natürlich seine eigene Länderkennung verwenden und die Wlan SSID und Passwort eintragen.
 
 **Schritt 3**
