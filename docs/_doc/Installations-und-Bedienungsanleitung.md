@@ -59,7 +59,7 @@ Die SD Karte aus dem Rechner entfernen und in den Raspberry Pi einstecken. Der R
 ## SSH Verbindung herstellen
 Hierzu wird [Putty](https://www.putty.org/) verwendet. Nach der Installation öffnet man Putty und trägt die IP Adresse des Raspberry Pi ein.
 Die IP Adresse findet man heraus, wenn man in die Einstellungen des Routers geht. Bei einer FritzBox zum Beispiel geht das über den Browser mit "fritz.box" in der Navigationsleiste.
-In den meisten Routern kann man auch eine statische IP-Adresse für den Raspberry Pi vergeben, dann muss man nicht immer die IP-Adresse neu herausfinden. Mit "Open" öffnet man die SSH-Verbindung und landet im Terminal des Pi.
+In den meisten Routern kann man auch eine statische IP-Adresse für den Raspberry Pi vergeben, dann muss man nicht immer die IP-Adresse neu herausfinden. Mit "Open" öffnet man die SSH-Verbindung und landet im Terminal des Pi. Die Anmeldedaten sind per default Benutzername "pi" mit dem Passwort "raspberry".
 
 ## Alice installieren und konfigurieren
 
@@ -80,7 +80,7 @@ Den Startvorgang kann man beobachten mit: `tail -f /var/log/syslog`
 
 Nach langer Zeit sollte über die Boxen ein "Ding" zu hören sein. Das bedeutet Alice ist bereit.
 
-Man kann über einen PC im selben Netzwerk eine UI im Browser aufrufen. Diese findet man unter `<ip>:5000` .
+Man kann über einen PC im selben Netzwerk eine UI im Browser aufrufen. Diese findet man unter `<ip>:5000` . Im Bereich "ADMIN" findet man die Einstellungen aus der Grundkonfiguration und kann diese ändern. Den Bereich betritt man mit dem Benutzernamen "ADMIN" und dem Passwort: "1234".
 
 
 
