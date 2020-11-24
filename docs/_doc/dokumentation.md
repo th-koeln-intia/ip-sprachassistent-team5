@@ -7,3 +7,5 @@ icon:
   name: fa-book
 color: orange
 ---
+
+Hier könnte was über Tests und Bewertungen einzelner Techonlogien stehen (Testlabor).
