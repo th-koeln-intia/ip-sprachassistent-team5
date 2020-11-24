@@ -82,11 +82,25 @@ Nach langer Zeit sollte über die Boxen ein "Ding" zu hören sein. Das bedeutet 
 
 Man kann über einen PC im selben Netzwerk eine UI im Browser aufrufen. Diese findet man unter `<ip>:5000` . Im Bereich "ADMIN" findet man die Einstellungen aus der Grundkonfiguration und kann diese ändern. Den Bereich betritt man mit dem Benutzernamen "ADMIN" und dem Passwort: "1234".
 
+## Lampen über das Netzwerk steuern
 
+Um zu testen, ob der Conbee 2 Stick die Lampen ansteuern kann, kann man auf dem Raspberry Pi deCONZ installieren und dann mit Phoscon die Lampen über das Netzwerk suchen und ansteuern.
 
+**deCONZ installieren**
 
+Für den Conbee 2 Stick muss zuerst die passende deCONZ Firmware heruntergeladen werden. Dazu führt man den Befehl `wget https://deconz.dresden-elektronik.de/deconz-firmware/deCONZ_Rpi_0x26390500.bin.GCF` in der SSH-Shell des Pi's aus.
 
+Dann flasht man die Firmware mit `sudo GCFFlasher_internal -t 60 -d /dev/ttyACM0 -f deCONZ_ConBeeII_0x26660700.bin.GCF`
 
+Und zuletzt startet man das Programm `sudo systemctl start deconz`
+
+Für Troubleshooting und andere geräte zum Beispiel RaspBee 2 kann [diese Anleitung](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Update-deCONZ-manually) weiterhelfen.
+
+**Phoscon nutzen**
+
+Die [Phoscon App](http://phoscon.de/app) ruft man ganz einfach über den Browser auf. Nachdem man ein Passwort festgelegt hat und seine Lichter gesucht und gefunden hat, kann es schon losgehen. Von hier aus kann man manuell die Farbe, Sättigung und Helligkeit ändern, den einzelnen Lampen verschiedene Namen geben und in Gruppen zuordnen und noch vieles mehr.
+
+Wenn deCONZ und Alice gleichzeitig auf dem Pi laufen kann es zu Problemen bis zum Absturz des Pi's kommen. Mehr dazu im [Troubleshoot](https://ip-team5.intia.de/projekt.html).
 
 
 
