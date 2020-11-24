@@ -44,7 +44,7 @@ Mit dieser Dokumentation möchten wir unsere Ergebnisse und Entwicklungserfahrun
 [ARCHILAB]: https://www.archi-lab.io/pages/viewpage.action?pageId=41156613
 [NTIA]: http://intia.de
 [ALICE]: https://docs.projectalice.io/
-[ANLEITUNG]: /anleitung-und-funktionsuebersicht.html
+[ANLEITUNG]: /alice.html
 [PROJEKT]: /projekt.html
 [GITHUB]: https://github.com/th-koeln-intia/ip-sprachassistent-team5
 
