@@ -10,8 +10,8 @@ tagline: |
   für das Archi-Lab im Rahmen des Forschungsprojekts INTIA
 heading: Wir präsentieren unsere Ergebnisse
 navigation:
-  - /Installations-und-Bedienungsanleitung
-  - /sprachassistenten-und-relevante-technologien
+  - /anleitung
+  - /sprachassistenten
   - /projekt
   - /alice
   - /dokumentation
