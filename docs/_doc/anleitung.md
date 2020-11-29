@@ -9,4 +9,6 @@ color: orange
 sections:
   - /anleitung/hardware
   - /anleitung/installation
+  - /anleitung/alice
+  - /anleitung/alice-scenarios
 ---
