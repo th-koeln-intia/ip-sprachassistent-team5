@@ -12,6 +12,7 @@ heading: Wir präsentieren unsere Ergebnisse
 navigation:
   - /anleitung
   - /sprachassistenten
+  - /mqtt
   - /projekt
   - /alice
   - /dokumentation
