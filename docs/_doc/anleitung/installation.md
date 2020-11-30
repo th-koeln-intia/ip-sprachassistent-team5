@@ -65,7 +65,7 @@ Das Passwort lässt sich mit `passwd` ändern. Als nächstes ist es wichtig das 
 
 Im Konfigurationstool `sudo raspi-config` lassen sich weitere Dinge konfigurieren wie Sprache, Tastatur, Hostname und Zeitzone.
 
-![elegant icons](assets/images/raspi-config.png){: .img-responsive}
+![raspi-config](assets/images/raspi-config.png){: .img-responsive}
 
 Um die GUI zu deaktivieren kann Boot / Auto Login auf `Console …` gesetzt werden. In `Interface Options` sollte SPI und I2C aktiviert werden. Anschließend sollte noch das Dateisystem unter `Advanced Options` mit `Expand Filesystem` vergrößert werden.
 
