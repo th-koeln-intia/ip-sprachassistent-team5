@@ -1,20 +1,22 @@
 ---
 title: Alice
 sections:
-  - Eine Übersicht über die Weboberfäche
+  - Webinterface
   - RedQueen stummschalten
-  - Das Adminmenü
-  - Logs & Troubleshooting
+  - Adminbereich
+  - Logs und Troubleshooting
   - Skills
 ---
 
-### Eine Übersicht über die Weboberfäche
--
+Einleitung
+
+### Webinterface
+Übersicht über das Webinterface mit Bildern
 
 ### RedQueen stummschalten
 -
 
-### Das Adminmenü
+### Adminbereich
 -
 
 ###### Einstellungen
@@ -29,7 +31,7 @@ sections:
 ###### Wakeword hinzufügen und trainieren
 -
 
-### Logs & Troubleshooting
+### Logs und Troubleshooting
 -
 
 ###### Systemlogs

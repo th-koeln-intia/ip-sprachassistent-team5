@@ -1,5 +1,5 @@
 ---
-title: Was benötige ich an Hardware?
+title: Brauche ich spezielle Hardware?
 sections:
   - Installation auf einem Rechner
   - Minimalanforderung

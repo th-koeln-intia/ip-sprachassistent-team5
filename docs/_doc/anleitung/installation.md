@@ -61,9 +61,11 @@ ssh pi@raspberrypi
 
 Das Passwort lässt sich mit `passwd` ändern. Als nächstes ist es wichtig das System auf den neusten Stand zu bringen. Dies tut man mit `sudo apt-get update` gefolgt von `sudo apt-get dist-upgrade -y`.
 
+###### Weitere Konfiguration mit Raspi-Config
+
 Im Konfigurationstool `sudo raspi-config` lassen sich weitere Dinge konfigurieren wie Sprache, Tastatur, Hostname und Zeitzone.
 
-###### Weitere Konfiguration mit Raspi-Config
+![elegant icons](assets/images/raspi-config.png){: .img-responsive}
 
 Um die GUI zu deaktivieren kann Boot / Auto Login auf `Console …` gesetzt werden. In `Interface Options` sollte SPI und I2C aktiviert werden. Anschließend sollte noch das Dateisystem unter `Advanced Options` mit `Expand Filesystem` vergrößert werden.
 
@@ -105,17 +107,8 @@ Nun kann man die Konfigurationsdatei mit dem Editor seiner Wahl bearbeiten. Beis
 
 Es lässt sich ein Mikrofontreiber von vielen auswählen, der automatisch installiert wird (ReSpeaker etc.) aber auch Sprache, Regionales, Techstack, Offlinetauglichkeit usw. einstellen. Einiges davon kann auch anschließend im Webinterface noch einmal angepasst werden.
 
-<div class="callout-block callout-warning"><div class="icon-holder">*&nbsp;*{: .fa .fa-exclamation-triangle}
-</div><div class="content">
-{: .callout-title}
-#### Wichtig
-
-Die Konfigurationsdatei ist im YAML-Format.<br>
-Damit die Installation reibungslos verläuft muss sichergestellt werden das zwischen `:` und Wert ein Leerzeichen ist.<br><br>
-`❌ key:value`<br><br>
-`✔️ key: value`
-                
-</div></div>
+Die Konfigurationsdatei ist im YAML-Format. Damit die Installation reibungslos verläuft muss sichergestellt werden das zwischen `:` und Wert ein Leerzeichen ist: 
+&nbsp; `❌ key:value` &nbsp; `✔️ key: value`
 
 ###### Alice starten
 
