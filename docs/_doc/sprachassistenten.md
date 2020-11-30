@@ -1,6 +1,6 @@
 ---
 title: Sprachassistenten und relevante Technologien
-excerpt: Allgemeines, Services und Alice Skills
+excerpt: Open-Source Makerlösungen und ihre Zusammensetzung
 date: 2020-11-28
 icon:
   type: fa
