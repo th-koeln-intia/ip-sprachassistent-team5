@@ -5,7 +5,7 @@ date: 2020-11-05
 icon:
   type: fa
   name: fa-book
-color: orange
+color: blue
 ---
 
 Hier könnte was über Tests und Bewertungen einzelner Techonlogien stehen (Testlabor).

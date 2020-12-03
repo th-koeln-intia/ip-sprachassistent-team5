@@ -13,8 +13,10 @@ navigation:
   - /anleitung
   - /sprachassistenten
   - /mqtt
-  - /projekt
+  - /topic-uebersicht
+  - /smart-home
   - /alice
+  - /testlabor
   - /dokumentation
   - /ergebnisse
 ---

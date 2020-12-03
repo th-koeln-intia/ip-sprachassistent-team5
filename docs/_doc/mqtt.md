@@ -9,6 +9,6 @@ color: primary
 sections:
   - /mqtt/mqtt
   - /mqtt/funktion-und-besonderheiten
-  - /mqtt/bezug-zu-projekt
+  - /mqtt/bezug-zum-projekt
   - /mqtt/implementationen
 ---

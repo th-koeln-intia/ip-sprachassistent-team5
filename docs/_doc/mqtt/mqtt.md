@@ -5,7 +5,7 @@ sections:
   - Weiterentwicklung und Standardisierung
 ---
 
-Das **Message Queuing Telemetry Transport**, kurz MQTT, ist ein offenes Telemetrieprotokoll, das auf TCP/IP aufbaut und ursprünglich für Industriesteuerungen entwickelt worden ist aber aufgrund seiner Zuverlässigkeit und seines sparsamen Umgangs mit Bandbreite und Ressourcen sich auch für den Bereich Internet of Things und Hausautomation eignet, da hier üblicherweise RISC-Mikroprozessoren zum Einsatz kommen.
+Das **Message Queuing Telemetry Transport**, kurz MQTT, ist ein offenes Telemetrieprotokoll, das auf TCP/IP aufbaut und ursprünglich für Industriesteuerungen entwickelt worden ist aber aufgrund seiner Zuverlässigkeit und seines sparsamen Umgangs mit Bandbreite und Ressourcen sich auch für den Bereich Internet of Things und Hausautomation eignet, da hier teilweise auch schwächere RISC-Mikroprozessoren zum Einsatz kommen und eine effiziente Datenübertragung daher essentiell ist.
 
 ### Geschichte
 

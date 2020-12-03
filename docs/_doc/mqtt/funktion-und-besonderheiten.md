@@ -4,7 +4,10 @@ sections:
   - Zentrale Rolle des Brokers
   - Publish-Subscribe-Messaging-Muster
   - Topics
-  - Wildcards
+  - Topic-Filter
+  - MQTT Control Packet
+  - Quality-of-Service
+  - Weitere Themen
 ---
 
 Als Telemetrieprotokoll ist es mit MQTT in erster Linie möglich Text und Zahlen zwischen verschiedenen verteilten Geräten (M2M-Kommunikation) zuverlässig zu übetragen und zwar auch bei ungünstigen Bedingungen.
@@ -19,7 +22,7 @@ MQTT verwendet für seine Kommunikation das Publish-Subscribe-Messaging-Muster.
 
 Hierbei senden die Absender von Nachrichten, die sogennanten **Publisher**, ihre Nachrichten nicht direkt an bestimmte Empfänger.
 
-Vielmehr veröffentlichen sie nur die Nachricht analog zu einem Broacast. Damit die Nachricht auch irgendwo ankommt, kategorisiert der Publisher seine Nachricht im Vorfeld mit einer Klasse. Die verfügbaren Empfänger, die sogennanten Subscriber, erhalten dann die Nachrichten der Klassen für die sie auch angemeldet sind. 
+Vielmehr veröffentlichen sie nur die Nachricht analog zu einem Broacast. Damit die Nachricht auch irgendwo ankommt, kategorisiert der Publisher seine Nachricht beim Absenden mit einer Klasse. Die verfügbaren Empfänger, die sogennanten Subscriber, erhalten dann die Nachrichten der Klassen für die sie auch angemeldet sind. 
 
 Beim Publishen einer Nachricht als Publisher weiß man also nicht wer die Nachricht am Ende erhält oder ob sie überhaupt jemand erhält, da es davon abhängt ob es Subscriber für die gewählte Klasse gibt.
 
@@ -33,7 +36,7 @@ Für den Nachrichtenaustausch zwischen Client und Broker ist die Wahl eines Topi
 
 ![MQTT Topics](assets/images/mqtt-topics.png){: .img-responsive}
 
-### Wildcards
+### Topic-Filter
 
 Es ist Subscribern möglich mithilfe von Wildcards **Topic Filter** zu erstellen. Dadurch kann beispielsweise mit nur einem Subscription-Request mehreren Topics zugleich gefolgt werden.
 
@@ -51,3 +54,19 @@ Diese Wildcard kann nur im letzten Topic-Level vorkommen und wählt alle Topics 
 
 ###### Topics mit $
 Eine Besonderheit bei MQTT sind Topics, die mit $ anfangen. Anwendungen dürfen keine Topics nutzen, die diesen Präfix haben, da jene Topics allein für den Broker reserviert sind. Beim Nutzen von Wildcards werden solche Topics ignoriert.
+
+
+### MQTT Control Packet
+
+
+###### Paketaufbau
+-
+
+###### Arten von Kontrollpaketen
+-
+
+### Quality-of-Service
+-
+
+### Weitere Themen
+-
