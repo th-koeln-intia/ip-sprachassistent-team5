@@ -1,5 +1,5 @@
 ---
-title: Funktion und Besonderheiten
+title: Funktionsweise
 sections:
   - Zentrale Rolle des Brokers
   - Publish-Subscribe-Messaging-Muster
@@ -7,6 +7,7 @@ sections:
   - Topic-Filter
   - MQTT Control Packet
   - Quality-of-Service
+  - Retained Messages
   - Weitere Themen
 ---
 
@@ -58,15 +59,40 @@ Eine Besonderheit bei MQTT sind Topics, die mit $ anfangen. Anwendungen dürfen 
 
 ### MQTT Control Packet
 
+Das MQTT-Protokoll tauscht sogenannte MQTT Control Packets aus. Das Paket besteht besteht wie gewöhnlich aus Header (Metadaten des Pakets) und Payload (eigentliche Nachricht). Der Header ist aber wiederrum in zwei Teile aufgeteilt: Dem sogennanten *Fixed Header*, den jedes Paket hat und einem *Variable header*, welchen nur bestimmte Pakettypen verwenden. Die offizielle Spezifikation ist [hier][MQTT_CONTROL_PACKET] zu finden.
 
-###### Paketaufbau
--
+[MQTT_CONTROL_PACKET]: http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718019
 
-###### Arten von Kontrollpaketen
--
+###### Kontrollpakettypen
+MQTT unterscheidet in 14 unterschiedliche Kontrollpakettypen, die zwischen Server und Client ausgetauscht werden. Hier ist die [vollständige Übersicht der Pakettypen][MQTT_PAKET_TYPES]. Sie haben alle verschiedene Funktionen wie z.B. den Verbindungsauf und -abbau, das Veröffentlichen von Nachrichten und das Subscriben und Unsubscriben von Topics, um die wichtigsten zu nennen.
+
+[MQTT_PAKET_TYPES]: http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718021
 
 ### Quality-of-Service
--
+Quality of Service, kurz QoS ist die Dienstgüte eines Kommunikationskanals. Das Quality-of-Service Level bestimmt die Verbindlichkeit der Zustellung einer Nachricht vom Sender zum Empfänger.
+
+Gerade bei Netzwerken, die keine zuverlässige Datenübertragung bieten, kann dank der QoS-Levels gewählt werden wie Zuverlässig die Übertragung der Nachricht sein sollte. Dies wird im Header des Kontrollpakets definiert.
+
+[MQTT][MQTT_QoS] unterscheidet drei QoS-Level:
+- Höchstens eine Zustellung (QoS Level 0)
+- Mindestends eine Zustellung (QoS Level 1)
+- Genau eine Zustellung (QoS Level 2)
+
+[MQTT_QoS]: http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718099
+
+Bei einer Nachricht mit QoS-Level 0 (default) wird das Paket einmal versendet und es gibt keine Garantie, das die Nachricht beim Empfänger ankommt.
+
+Ab QoS-Level 1 gibt es die Garantie, jedoch werden dafür mehrere Nachrichten an den Empfänger gesendet.
+
+Ab QoS-Level 2, dem letzten Level, hat man außerdem noch die Sicherheit, das nur eine Nachricht beim Empfänger ankommt und es keine Duplikate gibt.
+
+### Retained Messages
+
+Da Clients nur über den Broker miteinander kommunizieren und sich untereinander nicht kennen, kann eine Nachricht verloren gehen, falls bei einem Subscriber-Client die Verbindung im falschen Moment unterbricht. Denn der Broker übermittelt die Nachrichten standardmäßig einfach nur in Echtzeit und merkt sich nichts.
+
+Mit dem Setzen der Retain-Flag im Header einer Nachricht wird jedoch die letztgesendete Nachricht für ein entsprechendes Topic beim Broker zwischengespeichert und kann somit bei Neuverbindung eines Subscriber-Clients angefragt werden.
 
 ### Weitere Themen
--
+Für eine tiefere Einarbeitung in das Thema ist die [offizielle Spezifikation des Standards][MQTT] zu empfehlen.
+
+[MQTT]: http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html

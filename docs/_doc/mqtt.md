@@ -8,7 +8,7 @@ icon:
 color: primary
 sections:
   - /mqtt/mqtt
-  - /mqtt/funktion-und-besonderheiten
+  - /mqtt/funktionsweise
   - /mqtt/bezug-zum-projekt
   - /mqtt/implementationen
 ---
