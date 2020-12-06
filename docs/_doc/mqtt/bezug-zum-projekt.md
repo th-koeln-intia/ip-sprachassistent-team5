@@ -52,12 +52,12 @@ Wie bereits erwähnt bestimmt Hermes nicht nur Schnittstellen für die Kommunika
 
 ### Hermes Topics
 
-Hermes-spezifische Topics haben alle ein `hermes` als Bezeichner des ersten Topic-Levels und lassen sich dadurch leicht erkennen. Das zweite Topic-Level beschreibt immer die zuständige Komponente. 
-
-Eine vollständige Übersicht der API (Topics inkl. Felder) erhält man [hier][SNIPS_HERMES] und [hier][SNIPS_HERMES_DIALOG].
+Hermes-spezifische Topics haben alle ein `hermes` als Bezeichner des ersten Topic-Levels und lassen sich dadurch leicht erkennen. Das zweite Topic-Level beschreibt immer die zuständige Komponente. Eine vollständige Übersicht der API (Topics inkl. Felder) erhält man [hier][SNIPS_HERMES] und [hier][SNIPS_HERMES_DIALOG].
 
 [SNIPS_HERMES_DIALOG]: https://docs.snips.ai/reference/dialogue
 
 ### Alice Topics
 
-Alice-spezifische Topics haben `projectalice` als Bezeichner des ersten Topic-Levels und im zweiten Topic-Level gibt es `events` und `logging`.
+Alice-spezifische Topics lassen sich ähnlich erkennen, nur dass der Bezeichner des ersten Topic-Levels `projectalice` ist. Wir haben eine Übersicht der verschiedenen [Alice Topics][ALICE_TOPICS] erstellt.
+
+[ALICE_TOPICS]: /topic-uebersicht.html#alice
