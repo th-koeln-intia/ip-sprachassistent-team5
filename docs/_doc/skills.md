@@ -6,4 +6,8 @@ icon:
   type: fa
   name: fa-wrench
 color: green
+
+sections:
+  - /skills/liste
+
 ---
