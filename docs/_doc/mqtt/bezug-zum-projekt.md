@@ -4,6 +4,7 @@ sections:
   - Snips Hermes Protokoll
   - Hermes Topics
   - Alice Topics
+  - Zigbee2MQTT
 ---
 
 Rhasspy und Alice nutzen beide MQTT für die interne Kommunikation zwischen den verschiedenen Komponenten des Techstacks. MQTT als Protokoll allein reicht jedoch nicht, da es ein reines Kommunikationsprotokoll ohne Anwendungslogik ist.
@@ -61,3 +62,6 @@ Hermes-spezifische Topics haben alle ein `hermes` als Bezeichner des ersten Topi
 Alice-spezifische Topics lassen sich ähnlich erkennen, nur dass der Bezeichner des ersten Topic-Levels `projectalice` ist. Wir haben eine Übersicht der verschiedenen [Alice Topics][ALICE_TOPICS] erstellt.
 
 [ALICE_TOPICS]: /topic-uebersicht.html#alice
+
+### Zigbee2MQTT
+-

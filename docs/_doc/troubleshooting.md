@@ -1,10 +1,10 @@
 ---
-title: Dokumentation
-excerpt: Dokumentation der Entwicklungserfahrung
-date: 2020-11-05
+title: Troubleshooting
+excerpt: Probleme, die uns bei der Entwicklung begegenet sind
+date: 2020-12-07
 icon:
   type: fa
-  name: fa-book
+  name: fa-bug
 color: blue
 ---
 

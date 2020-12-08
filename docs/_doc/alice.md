@@ -1,6 +1,6 @@
 ---
 title: Project Alice
-excerpt: Alice, Skills und Vergleich zu Rhasspy
+excerpt: Muss ersetzt werden
 date: 2020-11-23
 icon:
   type: fa

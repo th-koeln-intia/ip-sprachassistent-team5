@@ -1,7 +1,7 @@
 ---
-title: Installations- und Bedienungsanleitung
-excerpt: Vom leeren Raspberry Pi zum Sprachassistenten Alice
-date: 2020-11-29
+title: Guide (Quick Start)
+excerpt: Installation, Bedienung und Entwicklung
+date: 2020-02-08
 icon:
   type: fa
   name: fa-paper-plane

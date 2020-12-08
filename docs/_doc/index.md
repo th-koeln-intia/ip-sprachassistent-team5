@@ -12,12 +12,14 @@ heading: Wir präsentieren unsere Ergebnisse
 navigation:
   - /anleitung
   - /sprachassistenten
+  - /alice
   - /mqtt
   - /topic-uebersicht
   - /smart-home
-  - /alice
+  - /troubleshooting
   - /testlabor
-  - /dokumentation
+  - /skills
+  - /glossar
   - /ergebnisse
 ---
 
