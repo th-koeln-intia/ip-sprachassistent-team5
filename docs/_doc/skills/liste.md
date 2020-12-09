@@ -1,9 +1,9 @@
 ---
 title: Skills die wir getestet haben
 sections:
-	- Reminder
-	- Textinputwidget
-	- Speechvisualizer
+  - Reminder
+  - Textinputwidget
+  - Speechvisualizer
 ---
 
 Eine Auflistung aller veröffentlichten Skills gibt es auf der [Seite von Alice](https://store.projectalice.io/).
