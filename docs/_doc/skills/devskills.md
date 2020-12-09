@@ -5,7 +5,6 @@ sections:
   - SpeechVisualizer
 ---
 
-
 ### TextInputWidget
 
 Während der Arbeit am ASR von Alice, wurden wir auf Textinputwidget aufmerksam. Mit diesem Skill kann man eine kleine Oberfläche auf der Weboberfläche im Reiter HOME erstellen, 
@@ -16,6 +15,8 @@ TODO: Bilder und genauere beschreibung von funktionen.
 
 Ein Hauptproblem bei diesem Skill ist, dass man nicht mehrstufige Dialoge führen kann. Das bedeutet, wenn man zum Beispiel den Reminder testet, sagt der Benutzer: "Erstelle einen Alarm für 14 Uhr" und der Assistent antwortet:
 "Welche Nachricht möchtest du für den Alarm hinterlegen?" oder "Welches Thema soll der Alarm haben?" und dann wird der Dialog beendet ohne antworten zu können.
+
+Die Funktion "Remember me" funktioniert nicht zuverlässig.
 
 ### SpeechVisualizer
 

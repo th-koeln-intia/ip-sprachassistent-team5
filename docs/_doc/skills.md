@@ -13,5 +13,4 @@ sections:
   - /skills/devskills
 ---
 
-
 Eine Auflistung aller veröffentlichter Skills gibt es auf der [Seite von Alice](https://store.projectalice.io/).
