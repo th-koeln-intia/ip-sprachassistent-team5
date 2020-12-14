@@ -87,7 +87,7 @@ Damit der Sprachassistent den Benutzer mit ausreichend unnützem Wissen versorgt
 
 Von diesem Skill erwarten wir, dass nach entsprechender Aufforderung ein zufälliger Fakt genannt wird. Es sollen 
 genügend Fakten vorhanden sein, dass sich nicht so schnell ein Fakt wiederholt. Außerdem soll auch einstellbar sein, 
-dass ein zufälliger Fakt ohne Aufforderung nach einiger Zeit genannt wird ähnlich wie bei RedQueen(#RedQueen). 
+dass ein zufälliger Fakt ohne Aufforderung nach einiger Zeit genannt wird ähnlich wie bei RedQueen(https://ip-team5.intia.de/skills.html#redqueen). 
 
 ##### Durchgeführte Tests
 

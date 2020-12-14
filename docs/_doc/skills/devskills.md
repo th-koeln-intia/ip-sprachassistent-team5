@@ -13,7 +13,7 @@ um andere Skills und Funktionen besser zu testen.
 
 TODO: Bilder und genauere beschreibung von funktionen.
 
-Ein Hauptproblem bei diesem Skill ist, dass man nicht mehrstufige Dialoge führen kann. Das bedeutet, wenn man zum Beispiel den Reminder testet, sagt der Benutzer: "Erstelle einen Alarm für 14 Uhr" und der Assistent antwortet:
+Ein Hauptproblem bei diesem Skill ist, dass man nicht mehrstufige Dialoge führen kann. Das bedeutet, wenn man zum Beispiel den Reminder(https://ip-team5.intia.de/skills.html#reminder) testet, sagt der Benutzer: "Erstelle einen Alarm für 14 Uhr" und der Assistent antwortet:
 "Welche Nachricht möchtest du für den Alarm hinterlegen?" oder "Welches Thema soll der Alarm haben?" und dann wird der Dialog beendet ohne antworten zu können.
 
 Die Funktion "Remember me" funktioniert nicht zuverlässig.
