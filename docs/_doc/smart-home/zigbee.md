@@ -9,7 +9,7 @@ sections:
   - ZigBee-Gateways
   - Alternative ZigBee-Gateways
   - Vergleich zu anderen Funkstandards
-  - Vor- und Nachteile
+  - Bewertung
 ---
 
 ![ZigBee Logo](assets/images/zigbee_logo.png){: style="float: right; margin-top: 0.35em" width="150px"}
@@ -116,7 +116,7 @@ Eine Übersicht von kompatiblen Adaptern findet man [hier][ZIGBEE2MQTT_ADAPTERS]
 Mit [Zigbee2MQTT][ZIGBEE2MQTT] ist es möglich üblichen Geräten im Netzwerk (LAN) über das [MQTT-Protokoll][MQTT] eine Schnittstelle zum ZigBee-Netzwerk zu bieten.
 
 [ZIGBEE2MQTT]: https://www.zigbee2mqtt.io/information/zigbee_network.html#zigbee2mqtt
-[MQTT]: /mqtt
+[MQTT]: /mqtt.html
 
 ### Vergleich zu anderen Funkstandards
 **WLAN**: Der herkömmliche WLAN-Standard WiFi 5 überträgt Daten mehr als tausendmal schneller als ZigBee, verbraucht aber auch viel Strom. Das ist bei der Videoübertragung einer smarten Überwachungskamera wegen der hohen Datenmenge notwendig. Ein batteriebetriebener Thermostat, der lediglich die Temperatur sendet, benötigt dagegen keine so große Bandbreite und profitiert von einem sparsameren Funkstandard wie ZigBee.
@@ -127,7 +127,7 @@ Mit [Zigbee2MQTT][ZIGBEE2MQTT] ist es möglich üblichen Geräten im Netzwerk (L
 
 **EnOcean**: Kommt ausschließlich bei ultra-energiearmen Sensoren zum Einsatz, die durch Temperaturunterschiede und Bewegungen Strom generieren und damit ohne Batterien und externe Stromquellen auskommen. Auch ZigBee 3.0 unterstützt mit der Spezifikation Green Power diese Funktion. Insgesamt ist EnOcean weniger verbreitet als ZigBee.
 
-### Vor- und Nachteile
+### Bewertung
 
 ###### Vorteile von ZigBee
 
