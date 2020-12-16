@@ -1,11 +1,11 @@
 ---
 title: Troubleshooting
 excerpt: Probleme, die uns bei der Entwicklung begegenet sind
-date: 2020-12-07
+date: 2020-12-16
 icon:
   type: fa
   name: fa-bug
 color: blue
+sections:
+  - /troubleshooting/reboot-cycle
 ---
-
-Hier könnte was über Tests und Bewertungen einzelner Techonlogien stehen (Testlabor).
