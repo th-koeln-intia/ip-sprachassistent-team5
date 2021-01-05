@@ -1,0 +1,25 @@
+{
+	"name": "LightsController",
+	"speakableName": "Lights Controller",
+	"version": "0.0.1",
+	"icon": "fab fa-battle-net",
+	"category": "undefined",
+	"author": "",
+	"maintainers": [],
+	"desc": "A skill to control your zigbee lights",
+	"aliceMinVersion": "1.0.0-b3",
+	"pipRequirements": [
+		""
+	],
+	"systemRequirements": [
+		""
+	],
+	"conditions": {
+		"lang": [
+			"en",
+			"de"
+		],
+		"online": true,
+		"asrArbitraryCapture": true
+	}
+}

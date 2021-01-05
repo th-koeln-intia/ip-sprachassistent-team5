@@ -1,0 +1,15 @@
+{
+	"name": "lightscontroller",
+	"version": "0.0.1",
+	"category": "projectalice",
+	"dependencies": {},
+	"author": "",
+	"license": "GPLv3",
+	"node-red": {
+		"nodes": {
+			"": ".js"
+
+		}
+	},
+	"devDependencies": {}
+}
