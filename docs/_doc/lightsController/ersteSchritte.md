@@ -1,5 +1,5 @@
 ---
-title: Skills, die bei der Installation von Alice installiert werden
+title: Erste Schritte
 sections:
   - DevMode freischalten und "leeren" Skill erstellen
   - Entwicklungsumgebungen
