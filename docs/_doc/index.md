@@ -21,6 +21,7 @@ navigation:
   - /skills
   - /glossar
   - /ergebnisse
+  - /lightsController
 ---
 
 Im Rahmen des [Informatikprojekts][ARCHILAB] haben wir *(Team 5)* ein ***Proof-of-Concept*** eines *Open-Source Sprachassistenten* erstellt.
