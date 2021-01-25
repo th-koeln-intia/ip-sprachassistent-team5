@@ -8,10 +8,6 @@ sections:
   - Contextsensitive
 ---
 
-Stand: 
-
-TODO: nochmal neuinstallieren und gucken ob wirklich diese skills installiert werden
-
 ### AliceCore
 
 Dieser Skill regelt alle Basiselemente für einen Standart Dialog.
