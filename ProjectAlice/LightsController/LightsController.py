@@ -5,16 +5,20 @@ from core.util.Decorators import IntentHandler
 
 class LightsController(AliceSkill):
 	"""
-	Author: 
+	Author: Team5
 	Description: A skill to control your zigbee lights
 	"""
 
+	
+	@IntentHandler('toggleLightOn')
+	def toggleOnIntent(self, session: DialogSession, **_kwargs):
+		self.endDialog(session.sessionId, self.randomTalk(text='toggleOn'))
 
-	@IntentHandler('MyIntentName')
-	def testIntent(self, session: DialogSession, **_kwargs):
-		pass
 
+	@IntentHandler('toggleLightOff')
+	def toggleOffIntent(self, session: DialogSession, **_kwargs):
+		self.endDialog(session.sessionId, self.randomTalk(text='toggleOff'))
 
-	@IntentHandler('MySecondIntentName')
-	def secondTestIntent(self, session: DialogSession, **_kwargs):
-		pass
+	@IntentHandler('changeColor')
+	def changeColorIntent(self, session: DialogSession, **_kwargs):
+		self.endDialog(session.sessionId, self.randomTalk(text='changeColor'))

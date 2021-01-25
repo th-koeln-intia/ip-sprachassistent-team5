@@ -2,15 +2,90 @@
 	"skill": "LightsController",
 	"slotTypes": [
 		{
-			"name": "DummySlot",
+			"name": "Color",
 			"matchingStrictness": null,
-			"automaticallyExtensible": false,
+			"automaticallyExtensible": true,
 			"useSynonyms": true,
 			"values": [
 				{
-					"value": "foo",
+					"value": "red",
 					"synonyms": [
-						"bar"
+						"rote",
+						"rot"
+					]
+				},
+				{
+					"value": "yellow",
+					"synonyms": [
+						"gelbe",
+						"gelb"
+					]
+				},
+				{
+					"value": "blue",
+					"synonyms": [
+						"blaue",
+						"blau"
+					]
+				},
+				{
+					"value": "violette",
+					"synonyms": [
+						"lilane",
+						"violett",
+						"violette",
+						"lila"
+					]
+				},
+				{
+					"value": "green",
+					"synonyms": [
+						"grüne",
+						"grün"
+					]
+				},
+				{
+					"value": "orange",
+					"synonyms": [
+						"orangene",
+						"orange"
+					]
+				},
+				{
+					"value": "white",
+					"synonyms": [
+						"weiße",
+						"weiß"
+					]
+				}
+			]
+		},
+		{
+			"name": "WhichLamp",
+			"matchingStrictness": null,
+			"automaticallyExtensible": true,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "PC",
+					"synonyms": [
+						"PC",
+						"Pe Zeh",
+						"Pi sie",
+						"PC Lampe",
+						"Pe Zeh Lampe",
+						"Pi sie Lampe"
+					]
+				},
+				{
+					"value": "Sofa",
+					"synonyms": [
+						"Sofa",
+						"Couch",
+						"Kautsch",
+						"Sofa Lampe",
+						"Couch Lampe",
+						"Kautsch Lampe"
 					]
 				}
 			]
@@ -18,17 +93,109 @@
 	],
 	"intents": [
 		{
-			"name": "Dummy",
+			"name": "toggleLightOn",
 			"enabledByDefault": true,
 			"utterances": [
-				"dummy {foo:=>DummySlotName}",
-				"bar"
+				"Schalte das Licht ein",
+				"Mach das Licht an",
+				"Schalte das Licht ein, bitte",
+				"Mach das Licht an, bitte",
+				"Bitte, Schalte das Licht ein",
+				"Bitte, Mach das Licht an",
+				"Schalte bitte das Licht ein",
+				"Mach bitte das Licht an",
+				"Schalte die {PC:=>Lamp} ein",
+				"Schalte die {PC:=>Lamp} Lampe ein",
+				"Mach die {PC:=>Lamp} an",
+				"Mach die {PC:=>Lamp} Lampe an",
+				"Schalte die {PC:=>Lamp} ein, bitte",
+				"Schalte die {PC:=>Lamp} Lampe ein, bitte",
+				"Mach die {PC:=>Lamp} an, bitte",
+				"Mach die {PC:=>Lamp} Lampe an, bitte",
+				"Bitte, Schalte die {PC:=>Lamp} ein",
+				"Bitte, Schalte die {PC:=>Lamp} Lampe ein",
+				"Bitte, Mach die {PC:=>Lamp} an",
+				"Bitte, Mach die {PC:=>Lamp} Lampe an",
+				"Schalte bitte die {PC:=>Lamp} ein",
+				"Schalte bitte die {PC:=>Lamp} Lampe ein",
+				"Mach bitte die {PC:=>Lamp} an",
+				"Mach bitte die {PC:=>Lamp} Lampe an"
 			],
 			"slots": [
 				{
-					"name": "DummySlotName",
-					"required": false,
-					"type": "DummySlot",
+					"name": "Lamp",
+					"required": true,
+					"type": "WhichLamp",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "toggleLightOff",
+			"enabledByDefault": true,
+			"utterances": [
+				"Schalte das Licht aus",
+				"Mach das Licht aus",
+				"Schalte das Licht aus, bitte",
+				"Mach das Licht aus, bitte",
+				"Bitte, Schalte das Licht aus",
+				"Bitte, Mach das Licht aus",
+				"Schalte bitte das Licht aus",
+				"Mach bitte das Licht aus",
+				"Schalte die {PC:=>Lamp} aus",
+				"Schalte die {PC:=>Lamp} Lampe aus",
+				"Mach die {PC:=>Lamp} aus",
+				"Mach die {PC:=>Lamp} Lampe aus",
+				"Schalte die {PC:=>Lamp} aus, bitte",
+				"Schalte die {PC:=>Lamp} Lampe aus, bitte",
+				"Mach die {PC:=>Lamp} aus, bitte",
+				"Mach die {PC:=>Lamp} Lampe aus, bitte",
+				"Bitte, Schalte die {PC:=>Lamp} aus",
+				"Bitte, Schalte die {PC:=>Lamp} Lampe aus",
+				"Bitte, Mach die {PC:=>Lamp} aus",
+				"Bitte, Mach die {PC:=>Lamp} Lampe aus",
+				"Schalte bitte die {PC:=>Lamp} aus",
+				"Schalte bitte die {PC:=>Lamp} Lampe aus",
+				"Mach bitte die {PC:=>Lamp} aus",
+				"Mach bitte die {PC:=>Lamp} Lampe aus"
+			],
+			"slots": [
+				{
+					"name": "Lamp",
+					"required": true,
+					"type": "WhichLamp",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "changeColor",
+			"enabledByDefault": true,
+			"utterances": [
+				"Ändere die Farbe zu {rot:=>LightsColor}",
+				"Mach {rote:=>LightsColor} Farbe",
+				"Lampen {rot:=>LightsColor}",
+				"Alle Lampen {rot:=>LightsColor}",
+				"Mach die {PC:=>Lamp} Lampe {rot:=>LightsColor}",
+				"Mach die {PC:=>Lamp} {rot:=>LightsColor}",
+				"Mach bitte die {PC:=>Lamp} Lampe {rot:=>LightsColor}",
+				"Mach bitte die {PC:=>Lamp} {rot:=>LightsColor}",
+				"Ändere die {PC:=>Lamp} {rot:=>LightsColor}",
+				"Ändere die {PC:=>Lamp} Lampe {rot:=>LightsColor}",
+				"Ändere die Farbe der {PC:=>Lamp} Lampe zu {rot:=>LightsColor}",
+				"Ändere die Farbe der {PC:=>Lamp} zu {rot:=>LightsColor}",
+			],
+			"slots": [
+				{
+					"name": "LightsColor",
+					"required": true,
+					"type": "Color",
+					"missingQuestion": ""
+				},
+				{
+					"name": "Lamp",
+					"required": true,
+					"type": "WhichLamp",
 					"missingQuestion": ""
 				}
 			]

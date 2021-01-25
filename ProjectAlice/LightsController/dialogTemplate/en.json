@@ -2,33 +2,64 @@
 	"skill": "LightsController",
 	"slotTypes": [
 		{
-			"name": "DummySlot",
+			"name": "Color",
 			"matchingStrictness": null,
-			"automaticallyExtensible": false,
+			"automaticallyExtensible": true,
 			"useSynonyms": true,
 			"values": [
 				{
-					"value": "foo",
-					"synonyms": [
-						"bar"
-					]
+					"value": "red"
+				},
+				{
+					"value": "yellow"
+				},
+				{
+					"value": "blue"
+				},
+				{
+					"value": "violett"
+				},
+				{
+					"value": "green"
+				},
+				{
+					"value": "orange"
+				},
+				{
+					"value": "white"
 				}
 			]
 		}
 	],
 	"intents": [
 		{
-			"name": "Dummy",
+			"name": "toggleLightOn",
 			"enabledByDefault": true,
 			"utterances": [
-				"dummy {foo:=>DummySlotName}",
-				"bar"
+				"Turn the lights on",
+				"Make Brightness"
+			]
+		},
+		{
+			"name": "toggleLightOff",
+			"enabledByDefault": true,
+			"utterances": [
+				"Turn the lihts off",
+				"Make darkness"
+			]
+		},
+		{
+			"name": "changeColor",
+			"enabledByDefault": true,
+			"utterances": [
+				"Change color to {red:=>Color}",
+				"Do {red:=>Color} color"
 			],
 			"slots": [
 				{
-					"name": "DummySlotName",
-					"required": false,
-					"type": "DummySlot",
+					"name": "LightsColor",
+					"required": true,
+					"type": "Color",
 					"missingQuestion": ""
 				}
 			]

@@ -1,6 +1,20 @@
 {
-	"dummy": [
-		"example sentence",
-		"another example sentence"
+	"toggleOn": [
+		"Das Licht ist jetzt an",
+		"Es werde Licht"
+	],
+
+	"toggleOff": [
+		"Das Licht ist jetzt aus",
+		"Schatten mögen euch verbergen"
+	],
+	
+	"changeColor": [
+		"Die Farbe wurde geändert"
+	],
+
+	"error": [
+		"Keine Farbe gefunden"
 	]
+	
 }

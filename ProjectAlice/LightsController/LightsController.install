@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"icon": "fab fa-battle-net",
 	"category": "undefined",
-	"author": "",
+	"author": "Team5",
 	"maintainers": [],
 	"desc": "A skill to control your zigbee lights",
 	"aliceMinVersion": "1.0.0-b3",

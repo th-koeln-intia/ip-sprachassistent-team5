@@ -1,6 +1,11 @@
 {
-	"dummy": [
-		"example sentence",
-		"another example sentence"
+	"toggleOn": [
+		"The light is on now",
+		"There will be light"
+	],
+
+	"toggleOff": [
+		"The light is off now",
+		"May shadows hide you"
 	]
 }
