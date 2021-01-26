@@ -1,0 +1,259 @@
+From ebd6fb6a3b29c534a91c3b20a789acb5131e5f6b Mon Sep 17 00:00:00 2001
+From: Edis Vilja <edis.vilja@smail.th-koeln.de>
+Date: Tue, 26 Jan 2021 08:56:03 +0100
+Subject: [PATCH] Update Deepspeech to 0.7.4 with German models
+
+---
+ core/asr/model/DeepSpeechAsr.py | 198 +++++++++++++++++---------------
+ 1 file changed, 107 insertions(+), 91 deletions(-)
+
+diff --git a/core/asr/model/DeepSpeechAsr.py b/core/asr/model/DeepSpeechAsr.py
+index e4d22658..297ea8ca 100644
+--- a/core/asr/model/DeepSpeechAsr.py
++++ b/core/asr/model/DeepSpeechAsr.py
+@@ -10,135 +10,151 @@ from core.dialog.model.DialogSession import DialogSession
+ from core.util.Stopwatch import Stopwatch
+ 
+ try:
+-	import deepspeech
++        import deepspeech
+ except:
+-	pass
++        pass
+ 
+ 
+ class DeepSpeechAsr(Asr):
+-	NAME = 'DeepSpeech Asr'
+-	DEPENDENCIES = {
+-		'system': [],
+-		'pip'   : {
+-			'deepspeech==0.6.1'
+-		}
+-	}
++        NAME = 'DeepSpeech Asr'
++        VERSION = '0.7.4'
++        DEPENDENCIES = {
++                'system': [],
++                'pip'   : {
++                        'deepspeech==' + VERSION
++                }
++        }
+ 
+ 
+-	def __init__(self):
+-		super().__init__()
+-		self._capableOfArbitraryCapture = True
+-		self._isOnlineASR = False
++        def __init__(self):
++                super().__init__()
++                self._capableOfArbitraryCapture = True
++                self._isOnlineASR = False
+ 
+-		self._langPath = Path(self.Commons.rootDir(), f'trained/asr/deepspeech/{self.LanguageManager.activeLanguage}')
++                self._langPath = Path(self.Commons.rootDir(), f'trained/asr/deepspeech/{self.LanguageManager.activeLanguage}')
+ 
+-		self._model: Optional[deepspeech.Model] = None
+-		self._triggerFlag = self.ThreadManager.newEvent('asrTriggerFlag')
++                self._model: Optional[deepspeech.Model] = None
++                self._triggerFlag = self.ThreadManager.newEvent('asrTriggerFlag')
+ 
+ 
+-	def onStart(self):
+-		super().onStart()
++        def onStart(self):
++                super().onStart()
+ 
+-		if not self.checkLanguage():
+-			self.downloadLanguage()
++                if not self.checkLanguage():
++                        self.downloadLanguage()
+ 
+-		self._model = deepspeech.Model(f'{self._langPath}/deepspeech-0.6.1-models/output_graph.tflite', 500)
+-		self._model.enableDecoderWithLM(f'{self._langPath}/deepspeech-0.6.1-models/lm.binary', f'{self._langPath}/deepspeech-0.6.1-models/trie', 0.75, 1.85)
++                self._model = deepspeech.Model(f'{self._langPath}/deepspeech-{self.VERSION}-models/output_graph.tflite')
++                self._model.setBeamWidth(500)
++                self._model.setScorerAlphaBeta(0.75, 1.85)
++                self._model.enableExternalScorer(f'{self._langPath}/deepspeech-{self.VERSION}-models/kenlm.scorer')
+ 
+ 
+-	def installDependencies(self) -> bool:
+-		if not super().installDependencies():
+-			return False
++        def installDependencies(self) -> bool:
++                if not super().installDependencies():
++                        return False
+ 
+-		return self.downloadLanguage() if not self.checkLanguage() else True
++                return self.downloadLanguage() if not self.checkLanguage() else True
+ 
+ 
+-	def checkLanguage(self) -> bool:
+-		if not self._langPath.exists():
+-			self._langPath.mkdir(parents=True)
+-			return False
++        def checkLanguage(self) -> bool:
++                if not self._langPath.exists():
++                        self._langPath.mkdir(parents=True)
++                        return False
+ 
+-		return False if not (self._langPath / 'deepspeech-0.6.1-models/output_graph.tflite').exists() else True
++                return False if not (self._langPath / 'deepspeech-' + self.VERSION + '-models/output_graph.tflite').exists() else True
+ 
+ 
+-	def downloadLanguage(self) -> bool:
+-		self.logInfo(f'Downloading language model for "{self.LanguageManager.activeLanguage}", hold on, this is going to take some time!')
+-		url = 'https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz'
++        def downloadLanguage(self) -> bool:
++                self.logInfo(f'Downloading language model for "{self.LanguageManager.activeLanguage}", hold on, this is going to take some time!')
+ 
+-		downloadPath = (self._langPath / url.rsplit('/')[-1])
+-		try:
+-			self.Commons.downloadFile(url, str(downloadPath))
++                # version 0.7.4 hardcoded
++                if self.LanguageManager.activeLanguage == "de":
++                        # Pre-trained model: https://github.com/AASHISHAG/deepspeech-german
++                        downloads = {
++                                "output_graph.tflite": "https://docs.google.com/uc?export=download&id=1lyOFCfrxiTwXotmeWs1hdm_Amg3J_y1T",
++                                "kenlm.scorer": "https://docs.google.com/uc?export=download&id=1mrfMSYp_mYrsLswttY_fvfAHaJ7azahC"
++                        }
++                else:
++                        downloads = {
++                                "output_graph.tflite": "https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/deepspeech-0.7.4-models.tflite",
++                                "kenlm.scorer": "https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/deepspeech-0.7.4-models.scorer"
++                        }
+ 
+-			self.logInfo(f'Language model for "{self.LanguageManager.activeLanguage}" downloaded, now extracting...')
+-			self.Commons.runSystemCommand(['tar', '-C', f'{str(downloadPath.parent)}', '-zxvf', str(downloadPath)])
++                for file in downloads:
++                        downloadPath = (self._langPath / file)
+ 
+-			downloadPath.unlink()
+-			return True
+-		except Exception as e:
+-			self.logError(f'Error installing language model: {e}')
+-			downloadPath.unlink()
+-			return False
++                        try:
++                                self.Commons.downloadFile(downloads[file], str(downloadPath))
+ 
++                                self.logInfo(f'Language model for "{self.LanguageManager.activeLanguage}" downloaded, now extracting...')
+ 
+-	def onVadUp(self):
+-		self._triggerFlag.set()
++                                downloadPath.unlink()
++                                return True
++                        except Exception as e:
++                                self.logError(f'Error installing language model: {e}')
++                                downloadPath.unlink()
++                                return False
+ 
+ 
+-	def onVadDown(self):
+-		if not self._triggerFlag.is_set():
+-			return
++        def onVadUp(self):
++                self._triggerFlag.set()
+ 
+-		self._recorder.stopRecording()
+ 
++        def onVadDown(self):
++                if not self._triggerFlag.is_set():
++                        return
+ 
+-	def decodeStream(self, session: DialogSession) -> Optional[ASRResult]:
+-		super().decodeStream(session)
+-		result = None
+-		previous = ''
++                self._recorder.stopRecording()
+ 
+-		with Stopwatch() as processingTime:
+-			with Recorder(self._timeout, session.user, session.siteId) as recorder:
+-				self.ASRManager.addRecorder(session.siteId, recorder)
+-				self._recorder = recorder
+-				streamContext = self._model.createStream()
+-				for chunk in recorder:
+-					if not chunk:
+-						break
+ 
+-					self._model.feedAudioContent(streamContext, np.frombuffer(chunk, np.int16))
++        def decodeStream(self, session: DialogSession) -> Optional[ASRResult]:
++                super().decodeStream(session)
++                result = None
++                previous = ''
+ 
+-					result = self._model.intermediateDecode(streamContext)
+-					if result and result != previous:
+-						previous = result
+-						self.partialTextCaptured(session=session, text=result, likelihood=1, seconds=0)
++                with Stopwatch() as processingTime:
++                        with Recorder(self._timeout, session.user, session.siteId) as recorder:
++                                self.ASRManager.addRecorder(session.siteId, recorder)
++                                self._recorder = recorder
++                                streamContext = self._model.createStream()
++                                for chunk in recorder:
++                                        if not chunk:
++                                                break
+ 
+-			text = self._model.finishStream(streamContext)
+-			self._triggerFlag.clear()
+-			self.end()
++                                        streamContext.feedAudioContent(np.frombuffer(chunk, np.int16))
++                                        result = streamContext.intermediateDecode()
+ 
+-		return ASRResult(
+-			text=text,
+-			session=session,
+-			likelihood=1.0,
+-			processingTime=processingTime.time
+-		) if result else None
++                                        if result and result != previous:
++                                                previous = result
++                                                self.partialTextCaptured(session=session, text=result, likelihood=1, seconds=0)
+ 
++                        text = streamContext.finishStream()
++                        self._triggerFlag.clear()
++                        self.end()
+ 
+-	def _checkResponses(self, session: DialogSession, responses: Generator) -> Optional[tuple]:
+-		if responses is None:
+-			return None
++                return ASRResult(
++                        text=text,
++                        session=session,
++                        likelihood=1.0,
++                        processingTime=processingTime.time
++                ) if result else None
+ 
+-		for response in responses:
+-			if not response.results:
+-				continue
+ 
+-			result = response.results[0]
+-			if not result.alternatives:
+-				continue
++        def _checkResponses(self, session: DialogSession, responses: Generator) -> Optional[tuple]:
++                if responses is None:
++                        return None
+ 
+-			if result.is_final:
+-				return result.alternatives[0].transcript, result.alternatives[0].confidence
+-			else:
+-				self.partialTextCaptured(session=session, text=result.alternatives[0].transcript, likelihood=result.alternatives[0].confidence, seconds=0)
++                for response in responses:
++                        if not response.results:
++                                continue
+ 
+-		return None
++                        result = response.results[0]
++                        if not result.alternatives:
++                                continue
++
++                        if result.is_final:
++                                return result.alternatives[0].transcript, result.alternatives[0].confidence
++                        else:
++                                self.partialTextCaptured(session=session, text=result.alternatives[0].transcript, likelihood=result.alternatives[0].confidence, seconds=0)
++
++                return None
+-- 
+2.30.0
+
