@@ -9,6 +9,7 @@ color: green
 
 sections:
   - /lightsController/ersteSchritte
+  - /lightsController/lightsController.py
 ---
 
 In diesem Bereich beschäftigen wir uns mit der Skillentwicklung anhand des Beispielskills "LightsController". Unser Skill soll verschiedene Lichter an oder ausschalten können, sowie die
