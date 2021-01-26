@@ -7,5 +7,6 @@ icon:
   name: fa-bug
 color: blue
 sections:
+  - /troubleshooting/asr-und-nlu
   - /troubleshooting/reboot-cycle
 ---
