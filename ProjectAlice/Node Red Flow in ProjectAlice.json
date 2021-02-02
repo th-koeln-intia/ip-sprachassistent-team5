@@ -24,31 +24,6 @@
         "wires": []
     },
     {
-        "id": "3098eebe.949a22",
-        "type": "onAliceEvent",
-        "z": "225ff426.7e6acc",
-        "broker": "347af6b4.8518ca",
-        "event": "onFullHour",
-        "x": 80,
-        "y": 40,
-        "wires": [
-            [
-                "7b3dbb00.54c194"
-            ]
-        ]
-    },
-    {
-        "id": "7b3dbb00.54c194",
-        "type": "say",
-        "z": "225ff426.7e6acc",
-        "broker": "347af6b4.8518ca",
-        "say": "mein bebi ist super süs",
-        "client": "",
-        "x": 370,
-        "y": 40,
-        "wires": []
-    },
-    {
         "id": "da93e2b4.5f455",
         "type": "mqtt in",
         "z": "225ff426.7e6acc",
@@ -1098,14 +1073,6 @@
         "tls": "",
         "usetls": false,
         "base_topic": "zigbee2mqtt"
-    },
-    {
-        "id": "347af6b4.8518ca",
-        "type": "aliceMqtt",
-        "broker": "localhost",
-        "port": "1883",
-        "tls": "",
-        "usetls": false
     },
     {
         "id": "6f00adf7.19ce54",
