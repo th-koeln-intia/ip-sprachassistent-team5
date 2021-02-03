@@ -1,12 +1,13 @@
 ---
 title: Topic-Übersicht
-excerpt: Hermes und Alice MQTT Topics
+excerpt: Hermes, Alice und ZigBee2MQTT Topics
 date: 2020-11-30
 icon:
   type: fa
   name: fa-bookmark
-color: green
+color: orange
 sections:
   - /topic-uebersicht/hermes
   - /topic-uebersicht/alice
+  - /topic-uebersicht/zigbee2mqtt
 ---
