@@ -1,7 +1,7 @@
 
-title: &site_title Sprachassistent
+title: &site_title Alice Sprachassistent
 description: >- # this means to ignore newlines until "baseurl:"
-  Proof-of-Concept und Dokumentation eines im Rahmen des Informatikprojekts entstandenen Open-Source Sprachassistenten.
+  Proof-of-Concept eines Open-Source Sprachassistent mithilfe von Project Alice
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -10,8 +10,8 @@ remote_theme: LeakyAbstractions/pretty-docs
 branding:
   icon:
     name: icon_mic_alt
-  highlight: Sprachassistent
-  bold: Unbennant
+  highlight: Alice
+  bold: Sprachassistent
 markdown: kramdown
 kramdown:
   auto_ids: true
