@@ -10,6 +10,5 @@ sections:
   - /wissen/sprachassistenten/sprachassistenten
   - /wissen/sprachassistenten/private-by-design
   - /wissen/sprachassistenten/techstack
-  - /wissen/sprachassistenten/hermes-protokoll
-  - /wissen/sprachassistenten/erweiterungen
+  - /wissen/sprachassistenten/funktionalitaet
 ---
