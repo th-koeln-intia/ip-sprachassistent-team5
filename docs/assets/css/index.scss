@@ -27,3 +27,33 @@
       margin-left: 1em;
     }
 }
+
+th {
+  background-color: #494d55;
+  color: white;
+  padding: 0.5em 0em;
+}
+
+th:first-child {
+  padding-left: 1em;
+}
+
+td {
+  padding: 0.5em;
+}
+
+table {
+  border: 1px solid #494d55;
+  border-spacing: 0px;
+  max-width: 100%;
+  overflow: auto;
+  break-inside: auto;
+  text-align: left;
+}
+
+.section-block {
+  overflow: hidden;
+  overflow-x: auto;
+  clear: both;
+  width: 100%;
+}
