@@ -1,6 +1,6 @@
 ---
 title: Projekt
-excerpt: Projekt, Ziele, Erfahrungen und Techstack
+excerpt: Projekt, Ziele und Techstack
 date: 2020-12-08
 icon:
   type: fa
