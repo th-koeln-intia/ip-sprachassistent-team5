@@ -9,5 +9,5 @@ color: orange
 sections:
   - /anleitung/einrichtung/hardware
   - /anleitung/einrichtung/installation
-  - /anleitung/einrichtung/troubleshooting
+  - /anleitung/einrichtung/wakeword
 ---
