@@ -14,4 +14,6 @@ sections:
   - /anleitung/bedienung/alice-erweitern
   - /anleitung/bedienung/admin
   - /anleitung/bedienung/troubleshooting
+  - /anleitung/bedienung/asr-und-nlu
+  - /anleitung/bedienung/reboot-cycle
 ---
