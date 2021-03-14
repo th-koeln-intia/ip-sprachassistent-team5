@@ -1,18 +1,21 @@
-# sample-project-site
-A simple site which contains a code project with a documentation in form of github pages
+# Sprachassistent Alice
+Wir haben uns im Rahmen unseres Informatikprojekts speziell mit Project Alice in der Beta 4 beschäftigt um ein Proof-of-Concept für einen Open-Source Sprachassistenten zu erstellen.
 
-## To DO
-1. Update License with correct owner
-1. Update Gitignore with all files that should not be uploaded
-1. Update the _config.yml with the correct page meta data
-1. Update this ReadMe with an appropriate description of the project
+In unserem Projekt haben wir uns mit der Frage beschäftigt ob mithilfe von Project Alice und der freien Software, die Alice verwendet ein zuverlässiger Sprachassistent für deutschsprachige Nutzer entstehen kann.
+
+Auch wenn kommerzielle Sprachassistenten zuverlässig funktionieren, funktionieren sie zumeist nur online und sind nicht geeignet wenn Datenschutzkonformität gefragt ist.
+
+Unser Projekt wird für das Forschungsprojekt INTIA durchgeführt, welches inklusive Methoden und Technologien für die Alltagsbewältigung in der Behinderten- und Erziehungshilfe entwickelt. INTIA möchte einen Sprachassistenten für ihren sogennanten Innovationskoffers erstellen und ist daran interessiert zu erfahren ob Open-Source Lösungen eine zuverlässige Alternative zu kommerziellen Sprachassistenten sein können.
+
+Unsere Erfahrungen mit Project Alice sowie die Wissensbasis, die wir uns im Rahmen des Projekts aneignen konnten aber auch unsere Ergebnisse und unser Fazit möchten wir mithilfe dieser Dokumentation für alle Interessierte zugänglich machen.
+
+## Die von uns getestete Version
+
+Wir haben uns mit der Beta 4 beschäftigt und bewerten nur die Beta 4. Mit der Beta 5 kam ein ganz neues Webinterface dazu, das die User Experience erheblich verbessert. Beta 5 bringt außerdem viele kleine Verbesserungen mit sich. Vor allem im Punkt Smart Home gibt es eine bessere Integration von Geräten. Außerdem treten die Bugs, die wir in Beta 4 gefunden haben, in Beta 5 wahrscheinlich nicht mehr auf, da sie behoben worden sind oder weil Teile des Codes ersetzt/erneuert worden sind.
 
 ## Dokumentation
-The documentation is created in form of GitHub pages following the official documentation:  
-[installation guide](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll)
 
-To run the documentation locally Jekyll is required. Follow the official installation [guide](https://jekyllrb.com/docs/installation/) to install Jekyll for the appropriate OS. It is important to install the correct version to prevent potential problems with Github Pages. The officially supported version is listed [here](https://pages.github.com/versions/).  
-The following command starts a local server, if Jekyll is installed with bundler:
-```bash 
-bundle exec jekyll serve
-```
+Unsere Dokumentation lässt sich mit folgendem Link erreichen: https://ip-team5.intia.de/
+
+## Projektstruktur
+In `skill` befindet sich unser selbstentwickelter Skill und in `docs` die Dateien unserer Jekyll-Dokumentation.
