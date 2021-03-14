@@ -210,10 +210,10 @@ Der Dialog Manager verwaltet eine Sitzung, die durch ein erkanntes Wakeword oder
 
 ### Weitere Technologie
 
-Der vorgestellte Techstack enthält nur das wichtigste für einen funktionierenden Sprachassistenten.
+Der vorgestellte Techstack enthält nur die wesentlichen Komponenten eines Sprachassistenten.
 
-Die Technologie für die Kommunikation zwischen den Komponten fehlt jedoch zum Beispiel. Rhasspy und Alice verwenden dafür das von Snips entwickelte Hermes Protokoll in Kombination mit einem MQTT Broker, welcher in den meisten Fällen Mosquitto von Eclipse ist. Anders als bei Client/Server-Modellen gibt es bei MQTT einen Broker der es erlaubt für ein bestimmtes Topic eine Nachricht zu publishen oder ein bestimmtes Topic zu subscriben um alle Nachrichten zu erhalten, die zu diesem Topic gesendet werden.
+Die Technologie für die Kommunikation zwischen den Komponenten fehlt jedoch zum Beispiel. Rhasspy und Alice verwenden dafür das von Snips entwickelte Hermes Protokoll in Kombination mit einem MQTT Broker. Hier wird überwiegend Mosquitto von Eclipse eingesetzt. MQTT setzt nicht auf das etablierte Client/Server-Modellen sondern verwendet das Publish/Subscribe-Modell. Bei MQTT gibt es einen Broker, der es erlaubt für ein bestimmtes Topic eine Nachricht zu publishen oder ein bestimmtes Topic zu subscriben um alle Nachrichten zu erhalten, die zu diesem Topic veröffentlicht werden.
 
-Für SmartHome ist außerdem das ZigBee Protokoll wichtig, welches mit auch mit MQTT angesprochen werden kann mithilfe von ZigBee2MQTT.
+Für den Bereich SmartHome ist außerdem das ZigBee-Protokoll wichtig, welches mit auch mit MQTT angesprochen werden kann mithilfe von ZigBee2MQTT.
 
 Für mehr Informationen zu dem Thema bitte [Weitere Technologie](/wissen-weitere-technologie.html) anschauen.

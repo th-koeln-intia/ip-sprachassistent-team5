@@ -6,4 +6,4 @@ Seitdem intelligente persönliche Sprachassistenten wie Siri (2012) oder Smart S
 
 Was jedoch alle kommerziellen Sprachassistenten gemein haben ist, dass sie nicht auf Privatsphäre ausgelegt sind und hauptsächlich cloudbasiert arbeiten. Wenn es um Datenschutz, Privatsphäre oder Offlinetauglichkeit geht sind diese Geräte also ungeeignet.
 
-Seit einigen Jahren gibt es jedoch ernstzunehmende Open-Source Lösungen, die den Fokus auf den Punkt Privatsphäre legen. Diese sogennanten Maker-Lösungen werden i.d.R. auf eigener Hardware wie z.B. einem Raspberry Pi installiert und bieten neben Privatsphäre und Datenschutzkonformität außerdem oft noch eine höhere Konfigurierbarkeit und Offlinetauglichkeit.
+Seit einigen Jahren gibt es jedoch ernstzunehmendere Open-Source Lösungen, die den Fokus auf den Punkt Privatsphäre legen. Diese sogennanten Maker-Lösungen werden i.d.R. auf eigener Hardware wie z.B. einem Raspberry Pi installiert und bieten neben Privatsphäre und Datenschutzkonformität außerdem oft noch eine höhere Konfigurierbarkeit und Offlinetauglichkeit.

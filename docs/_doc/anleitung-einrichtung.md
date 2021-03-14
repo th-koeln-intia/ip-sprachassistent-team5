@@ -1,7 +1,7 @@
 ---
 title: Einrichtungsguide
 excerpt: Hardware und Installation
-date: 2020-02-08
+date: 2021-03-14
 icon:
   type: fa
   name: fa-cube

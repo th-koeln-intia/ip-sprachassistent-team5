@@ -1,7 +1,7 @@
 ---
 title: Weitere Technologie
 excerpt: MQTT und ZigBee
-date: 2021-02-04
+date: 2021-03-14
 icon:
   type: fa
   name: fa-cogs

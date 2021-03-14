@@ -1,7 +1,7 @@
 ---
 title: Sprachassistenten
 excerpt: Open-Source Sprachassistenten und ihre Zusammenstellung
-date: 2021-02-03
+date: 2021-03-14
 icon:
   type: fa
   name: fa-assistive-listening-systems

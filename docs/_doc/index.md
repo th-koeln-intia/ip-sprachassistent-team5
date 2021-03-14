@@ -22,15 +22,7 @@ navigation:
   - /skills
 ---
 
-Wir haben uns im Rahmen unseres Informatikprojekts speziell mit **Project Alice** beschäftigt um ein **Proof-of-Concept** für einen **Open-Source Sprachassistenten** zu erstellen.
-
-In unserem Projekt haben wir uns mit der Frage beschäftigt ob mithilfe von Project Alice und der freien Software, die Alice verwendet ein zuverlässiger Sprachassistent für deutschsprachige Nutzer entstehen kann.
-
-Auch wenn kommerzielle Sprachassistenten zuverlässig funktionieren, funktionieren sie zumeist nur online und sind nicht geeignet wenn Datenschutzkonformität gefragt ist.
-
-Unser Projekt wird für das **Forschungsprojekt [INTIA][INTIA]** durchgeführt, welches inklusive Methoden und Technologien für die Alltagsbewältigung in der Behinderten- und Erziehungshilfe entwickelt. INTIA möchte einen Sprachassistenten für ihren sogennanten *Innovationskoffers* erstellen und ist daran interessiert zu erfahren ob Open-Source Lösungen eine zuverlässige Alternative zu kommerziellen Sprachassistenten sein können.
-
-Unsere Erfahrungen mit Project Alice sowie die Wissensbasis, die wir uns im Rahmen des Projekts aneignen konnten aber auch unsere Ergebnisse und unser Fazit möchten wir mithilfe dieser Dokumentation für Interessierte zugänglich machen.
+Wir haben uns im Rahmen unseres Informatikprojekts speziell mit Project Alice in der Beta 4 beschäftigt um ein Proof-of-Concept für einen Open-Source Sprachassistenten zu erstellen. Unsere Erfahrungen mit Project Alice sowie die Wissensbasis, die wir uns im Rahmen des Projekts aneignen konnten aber auch unsere Ergebnisse und unser Fazit möchten wir mithilfe dieser Dokumentation für Interessierte zugänglich machen.
 
 <div class="cta-container">
 

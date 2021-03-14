@@ -1,7 +1,7 @@
 ---
 title: Topicübersicht
 excerpt: Hermes, Alice und ZigBee2MQTT Topics
-date: 2020-11-30
+date: 2021-03-14
 icon:
   type: fa
   name: fa-bookmark

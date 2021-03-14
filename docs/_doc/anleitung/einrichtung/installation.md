@@ -9,7 +9,7 @@ Falls noch kein Betriebssystem auf der SD-Karte des Pi installiert ist oder eine
 
 ### Installation und Konfiguration des Basissystems
 
-Das Betriebssystem was sich am besten für eine Installation von Project Alice eignet ist Raspberry Pi OS. Es ist möglich, dass andere Debian-Distributionen auch gut funktionieren jedoch können nach aktuellem Stand (Februar 2021) neuere Paketquellen oder andere Paketmanager problematisch für eine Installation sein. Die Minimalversion von Raspberry Pi OS reicht nach eigenen Versuchen aus.
+Das Betriebssystem was sich am besten für eine Installation von Project Alice eignet ist Raspberry Pi OS. Es ist möglich, dass andere Debian-Distributionen auch gut funktionieren jedoch können nach aktuellem Stand (März 2021) neuere Paketquellen oder andere Paketmanager problematisch für eine Installation sein. Die Minimalversion von Raspberry Pi OS reicht nach eigenen Versuchen aus.
 
 ###### Offizielle, vorgefertigte Images für den Pi
 

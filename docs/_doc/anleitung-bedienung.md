@@ -1,7 +1,7 @@
 ---
 title: Bedienungsanleitung
 excerpt: Erste Schritte mit Alice und unserem Proof-of-Concept
-date: 2020-02-08
+date: 2021-03-14
 icon:
   type: fa
   name: fa-user
