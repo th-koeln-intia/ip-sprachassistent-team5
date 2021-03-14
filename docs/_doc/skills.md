@@ -1,6 +1,6 @@
 ---
 title: Skillübersicht
-excerpt: Skills, die wir getestet haben
+excerpt: Skills, die wir verwendet haben oder interessant fanden
 date: 2021-03-14
 icon:
   type: fa
