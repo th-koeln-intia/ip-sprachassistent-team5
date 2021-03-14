@@ -4,7 +4,7 @@ sections:
   - Repository clonen
   - Dependencies installieren
   - Samples aufnehmen
-  - Modell testen und Empfinglichkeit anpassen
+  - Modell testen und Empfindlichkeit anpassen
   - Modell hinzufügen
 ---
 
@@ -47,7 +47,7 @@ Falls Aufnahmen zu lang oder zu verschieden voneinander sind erscheinen Warnunge
 
 Wenn das Modell erzeugt ist wird der Pfad wo das Modell liegt vom Skript angegeben. Dieser sollte notiert werden, da er für den nächsten Scritt gebraucht wird.
 
-### Modell testen und Empfinglichkeit anpassen
+### Modell testen und Empfindlichkeit anpassen
 
 Bevor das Modell testen sollte Project Alice und die Wakeword-Engine ausgeschaltet sein:
 

@@ -1,6 +1,6 @@
 ---
 title: Bedienungsanleitung
-excerpt: Erste Schritte mit Alice und unserem Proof-of-Concept
+excerpt: Weboberfläche, Erste Schritte und Troubleshooting
 date: 2021-03-14
 icon:
   type: fa

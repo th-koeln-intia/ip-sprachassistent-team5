@@ -41,7 +41,7 @@ Vielmehr veröffentlichen sie nur die Nachricht analog zu einem Broacast. Damit 
 
 Beim Publishen einer Nachricht als Publisher weiß man also nicht wer die Nachricht am Ende erhält oder ob sie überhaupt jemand erhält, da es davon abhängt ob es Subscriber für die gewählte Klasse gibt.
 
-![MQTT Publish-Subscribe](assets/images/mqtt-publish-subscribe.jpg){: .img-responsive}
+![MQTT Publish-Subscribe](assets/images/mqtt-publish-subscribe.jpg){: .img-responsive style="margin: 0 auto;max-width:500px;width:100%"}
 
 ### Topics
 
@@ -49,7 +49,7 @@ Bei **Topics** handelt es sich um die MQTT-spezifische Bezeichnung der bereits a
 
 Für den Nachrichtenaustausch zwischen Client und Broker ist die Wahl eines Topics erforderlich. Topics bestehen aus technischer Sicht aus einem UTF-8-String. Dieser UTF-8-String wird logisch in Levels aufgeteilt, was durch einen Slash (Topic Level Seperator) dargestellt wird. Bei dieser logische Aufteilung handelt es sich um eine Baumstruktur ähnlich wie bei Domains oder Dateipfaden.
 
-![MQTT Topics](assets/images/mqtt-topics.png){: .img-responsive}
+![MQTT Topics](assets/images/mqtt-topics.png){: .img-responsive style="margin: 0 auto;max-width:500px;width:100%"}
 
 ### Topic-Filter
 
@@ -60,12 +60,12 @@ Diese Wildcard kann in jedem beliebigen Topic Level stehen und auch mehrmals vor
 
 Beispielsweise lässt sich bei der bereits vorgestellten Topic-Struktur die Temperatur aller verfügbaren Städte folgendermaßen auswählen:
 
-![MQTT Single-Level-Wildcard](assets/images/mqtt-single-level-wildcard.png){: .img-responsive}
+![MQTT Single-Level-Wildcard](assets/images/mqtt-single-level-wildcard.png){: .img-responsive style="margin: 0 auto;max-width:500px;width:100%"}
 
 ###### Multi-Level-Wildcard \#
 Diese Wildcard kann nur im letzten Topic-Level vorkommen und wählt alle Topics auf der gleichen Ebene aus einschließlich aller Untertopics.
 
-![MQTT Multi-Level-Wildcard](assets/images/mqtt-multi-level-wildcard.png){: .img-responsive}
+![MQTT Multi-Level-Wildcard](assets/images/mqtt-multi-level-wildcard.png){: .img-responsive style="margin: 0 auto;max-width:500px;width:100%"}
 
 ###### Topics mit $
 Eine Besonderheit bei MQTT sind Topics, die mit $ anfangen. Anwendungen dürfen keine Topics nutzen, die diesen Präfix haben, da jene Topics allein für den Broker reserviert sind. Beim Nutzen von Wildcards werden solche Topics ignoriert.
@@ -85,7 +85,7 @@ MQTT unterscheidet in 14 unterschiedliche Kontrollpakettypen, die zwischen Serve
 ### Quality-of-Service
 Quality of Service, kurz QoS ist die Dienstgüte eines Kommunikationskanals. Das Quality-of-Service Level bestimmt die Verbindlichkeit der Zustellung einer Nachricht vom Sender zum Empfänger.
 
-Gerade bei Netzwerken, die keine zuverlässige Datenübertragung bieten, kann dank der QoS-Levels gewählt werden wie Zuverlässig die Übertragung der Nachricht sein sollte. Dies wird im Header des Kontrollpakets definiert.
+Gerade bei Netzwerken, die keine zuverlässige Datenübertragung bieten, kann dank der QoS-Levels gewählt werden wie zuverlässig die Übertragung der Nachricht sein sollte. Dies wird im Header des Kontrollpakets definiert.
 
 [MQTT][MQTT_QoS] unterscheidet drei QoS-Level:
 - Höchstens eine Zustellung (QoS Level 0)
@@ -94,15 +94,15 @@ Gerade bei Netzwerken, die keine zuverlässige Datenübertragung bieten, kann da
 
 [MQTT_QoS]: http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718099
 
-Bei einer Nachricht mit QoS-Level 0 (default) wird das Paket einmal versendet und es gibt keine Garantie, das die Nachricht beim Empfänger ankommt.
+Bei einer Nachricht mit QoS-Level 0 (default) wird das Paket einmal versendet und es gibt keine Garantie, dass die Nachricht beim Empfänger ankommt.
 
 Ab QoS-Level 1 gibt es die Garantie, jedoch werden dafür mehrere Nachrichten an den Empfänger gesendet.
 
-Ab QoS-Level 2, dem letzten Level, hat man außerdem noch die Sicherheit, das nur eine Nachricht beim Empfänger ankommt und es keine Duplikate gibt.
+Ab QoS-Level 2, dem letzten Level, hat man außerdem noch die Sicherheit, dass nur eine Nachricht beim Empfänger ankommt und es keine Duplikate gibt.
 
 ### Retained Messages
 
-Da Clients nur über den Broker miteinander kommunizieren und sich untereinander nicht kennen, kann eine Nachricht verloren gehen, falls bei einem Subscriber-Client die Verbindung im falschen Moment unterbricht. Denn der Broker übermittelt die Nachrichten standardmäßig einfach nur in Echtzeit und merkt sich nichts.
+Da Clients nur über den Broker miteinander kommunizieren und sich untereinander nicht kennen, kann eine Nachricht verloren gehen, falls bei einem Subscriber-Client die Verbindung unterbricht. Denn der Broker übermittelt die Nachrichten standardmäßig einfach nur in Echtzeit und merkt sich nichts.
 
 Mit dem Setzen der Retain-Flag im Header einer Nachricht wird jedoch die letztgesendete Nachricht für ein entsprechendes Topic beim Broker zwischengespeichert und kann somit bei Neuverbindung eines Subscriber-Clients angefragt werden.
 
@@ -135,7 +135,7 @@ Das Hermes Protokoll von Snips macht genau das, es baut auf MQTT auf und definie
 
 **Format der Nachricht**
 
-Nachrichten, die mit dem Hermes Protokoll versendet werden sind falls sie Informationen enthalten, immer im JSON-Format. Ausgenommen hier sind natürlich Nachrichten die ihren Payload nicht nutzen und Audioframes, die im WAV-Format versendet werden.
+Nachrichten, die mit dem Hermes Protokoll versendet werden sind falls sie Informationen enthalten, immer im JSON-Format. Ausgenommen hier sind natürlich Nachrichten, die ihren Payload nicht nutzen und Audioframes, die im WAV-Format versendet werden.
 
 Beispiel einer Nachricht:
 ```
@@ -155,7 +155,7 @@ Ein anderes wichtiges Feld das fast genauso oft vorkommt ist die `sessionId`. Si
 
 Wie bereits erwähnt bestimmt Hermes nicht nur Schnittstellen für die Kommunikation sondern auch ganz genau den Ablauf des Sprachsteuerungprozesses und wie die einzelnen Komponenten miteinander interagieren. Im Folgenden eine etwas vereinfachte Darstellung in 9 Schritten (es fehlt u.a. dialogueManager/sessionStarted):
 
-![Hermes Message Flow](assets/images/hermes-flow.png){: .img-responsive}
+![Hermes Message Flow](assets/images/hermes-flow.png){: .img-responsive style="margin: 0 auto;max-width:700px;width:100%"}
 
 **Hermes Topics**
 
