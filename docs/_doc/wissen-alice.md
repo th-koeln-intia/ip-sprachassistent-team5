@@ -1,7 +1,7 @@
 ---
 title: Project Alice
 excerpt: Entstehung, Entwicklungsstand und Skillsystem
-date: 2021-03-14
+date: 2021-03-15
 icon:
   type: fa
   name: fa-microphone
