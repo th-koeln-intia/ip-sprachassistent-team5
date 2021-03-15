@@ -7,6 +7,7 @@ icon:
   name: fa-flask
 color: purple
 sections:
+  - /testlabor/das-asr-problem
   - /testlabor/alternative-installation
   - /testlabor/entwicklung-eines-lampenskills
 ---
