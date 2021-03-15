@@ -9,6 +9,7 @@ color: orange
 
 sections:
   - /skills/core-skills
+  - /skills/zigbee2mqttt
   - /skills/daily-skills
   - /skills/dev-skills
 ---
