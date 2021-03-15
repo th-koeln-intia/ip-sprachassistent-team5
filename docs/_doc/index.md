@@ -13,7 +13,7 @@ navigation:
   - /anleitung-entwicklung
   - /wissen-sprachassistenten
   - /wissen-weitere-technologie
-  - /wissen-alice
+  - /alice
   - /projekt
   - /versuche-und-erfahrungen
   - /ergebnisse-und-bewertung
