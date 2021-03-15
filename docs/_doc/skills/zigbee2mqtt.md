@@ -1,8 +1,9 @@
 ---
 title: Zigbee2Mqtt
 sections:
-  - TextInputWidget
-  - SpeechVisualizer
+  - Frühere Versionen
+  - Neuere Versionen und Erwartungen
+  - Unsere Arbeit
 ---
 
 Mit dem Skill Zigbee2Mqtt kann man eine Verbindung über einen Zigbeestick zu Zigbeelampen oder anderen Zigbeegeräten herstellen. Der Skill steht zum download zur Verfügung, aber ist offensichtlich noch nich vollständig ausgereift.

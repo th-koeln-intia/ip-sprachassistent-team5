@@ -8,4 +8,5 @@ icon:
 color: purple
 sections:
   - /testlabor/alternative-installation
+  - /testlabor/entwicklung-eines-lampenskills
 ---
