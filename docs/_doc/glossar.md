@@ -7,3 +7,5 @@ icon:
   name: fa-book
 color: orange
 ---
+
+Ein Glossar der wichtigsten Begriffe gibt es auf der [Seite von Alice](https://docs.projectalice.io/about-alice/GLOSSARY.html#examples).

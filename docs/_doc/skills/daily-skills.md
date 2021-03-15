@@ -10,7 +10,7 @@ sections:
 
 Hier haben wir einige Skills aufgelistet, die wir intressant fanden für den täglichen Gebrauch oder zur Unterhaltung. Diese Skills werden nicht bei der Erstinstallation installiert, sondern können über die Weboberfläche im Reiter Skills bei dem Downloadsymbol oben rechts heruntergeladen und installiert werden. Nach dem Download wird die NLU trainiert und der Sprachassistent ist dann nicht ansprechbar. Das kann einige Zeit dauern.
 
-Da wir ein Prblem mit der ASR (verlinken) hatten, konnten wir kaum einen Skill richtig testen, da das Testen durch die Sprachbarriere unfassbar anstrengend und zeitaufwendig war.
+Da wir ein [Problem mit der ASR](https://ip-team5.intia.de/versuche-und-erfahrungen.html#das-asr-problem) hatten, konnten wir kaum einen Skill richtig testen, da das Testen durch die Sprachbarriere unfassbar anstrengend und zeitaufwendig war.
 
 ### Reminder
 

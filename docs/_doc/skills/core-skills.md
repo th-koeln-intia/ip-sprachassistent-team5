@@ -145,7 +145,7 @@ Telemetry: Tut mir leid, ich habe diese Daten offenbar nicht.
 
 ### Contextsensitive
 
-Ein Skill, der den Dialog mit dem Sprachassistenten natürlicher machen soll. Bei unserer Arbeit mit ProjectAlice wurde er allerdings nie ausgelöst, was entweder an der dem Problem mit der ASR(Link einfügen) liegt oder an der unfertigkeit des SKills.
+Ein Skill, der den Dialog mit dem Sprachassistenten natürlicher machen soll. Bei unserer Arbeit mit ProjectAlice wurde er allerdings nie ausgelöst, was entweder an der dem [Problem mit der ASR](https://ip-team5.intia.de/versuche-und-erfahrungen.html#das-asr-problem) liegt oder an der unfertigkeit des SKills.
 
 ##### Funktionen
 
