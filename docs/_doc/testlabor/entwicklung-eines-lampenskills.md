@@ -1,7 +1,10 @@
 ---
-title: Alternative Installationsversuche
+title: Enwicklung eines eigenen Skills
 sections:
-  - 
+  - Schritt 1: Skill mit Intents
+  - Schritt 2: NodeRed implementation
+  - Schritt 3: Testen
+  - Bewertung
   
 ---
 
